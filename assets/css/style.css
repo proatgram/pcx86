@@ -1,0 +1,82 @@
+---
+---
+
+@import "jekyll-theme-minimal";
+
+.pcjs-explorer {
+  margin: 0 0 20px;
+}
+.pcjs-explorer .menu {
+}
+.pcjs-explorer-top {
+  padding-inline-start: 0 !important;
+}
+.pcjs-explorer-fixed {
+}
+.pcjs-explorer-top, .pcjs-explorer-top ul {
+  list-style: none;
+  padding-inline-start: 8px;
+  font-weight: bold;
+  margin: 0;
+  user-select: none;
+}
+.pcjs-explorer-item {
+  font-weight: normal;
+}
+.pcjs-explorer-open ul {
+}
+.pcjs-explorer-closed ul {
+  display: none;
+}
+li.pcjs-explorer-open:before {
+  content: "\2212\0020";
+}
+li.pcjs-explorer-closed:before {
+  content: "\002B\0020";
+}
+li.pcjs-explorer-item:before {
+  content: "\2192\0020";
+}
+.pcjs-explorer-selected a {
+  text-decoration: underline;
+}
+.pcjs-gallery-frame {
+  display: inline-block;
+  margin: 8px;
+  text-align: center;
+  vertical-align: top;
+}
+.pcjs-gallery-image {
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: slategray;
+}
+.pcjs-gallery-image img {
+  margin: 0;
+  max-width: 100%;
+  vertical-align: middle;
+}
+div.pcjs-gallery-image a {
+    color: black;
+}
+.pcjs-gallery-label {
+  font-size: small;
+}
+.pcjs-picture-frame {
+  margin: 32px;
+  vertical-align: top;
+}
+.pcjs-picture-image img {
+  margin: 0;
+  width: 100%;
+}
+.pcjs-picture-credit {
+  float: right;
+  font-size: x-small;
+  font-style: italic;
+  padding-left: 32px;
+}
+.pcjs-picture-caption {
+  font-size: x-small;
+}
