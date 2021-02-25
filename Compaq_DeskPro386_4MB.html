@@ -7,26 +7,25 @@
   |_|     \_____| |___/
                _/ |
               |__/
-  --><head>
+  -->  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Compaq DeskPro 386</title>
-    
-    
-    
-    
-    
-    
-    <link rel="canonical" href="https://www.pcjs.org/software/pcx86/sys/windows/win95/4.00.950/">
-    
-    
-    
-    
-    <link rel="shortcut icon" href="/assets/icons/favicon.ico">
-    <link rel="mask-icon" href="/assets/icons/safari-pinned-tab.svg" color="#5bbad5">
-    <link rel="stylesheet" href="/pcx86/assets/css/style.css">
-    <link rel="stylesheet" href="/pcx86/assets/css/pcjs.css">
+    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+    {%- comment %}{% seo %}{% endcomment %}
+    <meta name="description" content="{{ site.tagline }} {{ site.description | default: site.github.project_tagline | rstrip }}">
+    {%- if page.iconTitle != nil %}
+    <meta name="apple-mobile-web-app-title" content="{{ page.iconTitle }}">
+    {%- else %}
+    <meta name="apple-mobile-web-app-title" content="{{ site.title }}">
+    {%- endif %}
+    {%- if page.layout == "pwa" %}
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="{{ site.baseurl }}/pcx86/assets/icons/browserconfig.xml">
+{% include /pcx86/machine/styles.html %}
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
